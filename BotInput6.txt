@@ -1,0 +1,31 @@
+Sentence #1 (9 tokens):
+13 friends each gave 10 apples to Anurag.
+[Text=13 CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=CD Lemma=13 NamedEntityTag=NUMBER NormalizedNamedEntityTag=13.0]
+[Text=friends CharacterOffsetBegin=3 CharacterOffsetEnd=10 PartOfSpeech=NNS Lemma=friend NamedEntityTag=O]
+[Text=together CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=10 CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=CD Lemma=10 NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.0]
+[Text=apples CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=NNS Lemma=apple NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Anurag CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Anurag NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (CD 13) (NNS friends))
+    (DT together)
+    (VP (VBD took)
+      (NP (CD 10) (NNS apples))
+      (PP (TO to)
+        (NP (NNP Anurag))))
+    (. .)))
+
+root(ROOT-0, gave-4)
+nummod(friends-2, 13-1)
+nsubj(gave-4, friends-2)
+dep(gave-4, together-3)
+nummod(apples-6, 10-5)
+dobj(took-4, apples-6)
+case(Anurag-8, to-7)
+nmod:to(gave-4, Anurag-8)
+punct(gave-4, .-9)
+
